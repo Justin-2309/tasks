@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mdb/css/bootstrap.css">
+    <link rel="stylesheet" href="mdb/css/mdb.css">
+    <link rel="stylesheet" href="../assignment/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="row p-4">
+            <div class="col text-center">
+                <button class="btn btn-success" id="male_emp">Male Employee</button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-danger" id="female_emp">Female Employee</button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-black" id="all_emp">All Employee</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="row">
+        <div class="col">
+            <!-- Empty col -->
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <input type="search" class="form-control btn-outline-deep-orange mt-2">
+            </div>
+        </div>
+        <div class="col">
+            <button class="btn btn-light">Search</button>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-success">
+                        <h2 class="text-white">Employee Details</h2>
+                    </div>
+                    <div class="container-fluid">
+
+                        <div class="card-body text-center">
+                            <table class="table">
+                            <thead class="bg-default text-white">
+                                <tr>
+                                    <td>EId</td>
+                                    <td>Name</td>
+                                    <td>Email</td>
+                                    <td>Joining Date</td>
+                                    <td>Designation</td>
+                                    <td>Active</td>
+                                    <td>Gender</td>
+                                </tr>
+                            </thead>
+
+                            <tbody id="display_emp">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Script Code -->
+    <script src="Employee_Details.js"></script>
+</body>
+
+</html>
